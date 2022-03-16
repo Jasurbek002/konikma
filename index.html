@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./scss/main.scss">
+</head>
+
+<body>
+
+    <div class="silider">
+
+    </div>
+    <div class="connect">
+
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-12 ">
+
+            <form class="mt-5 form col-12 d-lg-flex flex-md-wrap d-md-block  justify-content-md-center" id="form">
+               <div class="d-flex justify-content-between mb-5">
+                <input class="form-control inputSearch w-auto  col-md-3 pe-5  zidex-1 m-2" id="Searchinput" placeholder="Search..." type="search">
+                <button type="submit" id="serchbtn" class="btn btn-warning   m-2">Search</button>
+               </div>
+
+                <select class="form-select oneselect m-2 h-25 col-md-4 me-md-auto ms-md-2 mb-md-4 " name="select" id="bigcelect">
+                    <option value="name">name</option>
+                    <option value="id">id</option>
+                    <option value="year">year</option>
+
+                </select>
+
+                <select class="form-select twoselect h-25 col-lg-3 m-2 col-md-4 me-md-auto ms-md-2 mb-md-5" name="idsort" id="idsort">
+
+                    <option class="" id="idoption1" value="osish">o'sish</option>
+                    <option id="idoption2" value="kamayish">kamayish</option>
+
+                </select>
+
+                <button type="submit" id="btnsort" class="btnsort h-25 col-lg-1 m-2 col-md-4 btn m-md-2 mb-md-5 btn-success">sort</button>
+
+               
+            </form>
+        </div>
+    </div>
+
+    <div id="filim_list" class=" filimlist row  p-0">
+
+       
+    </div>
+
+    <template id="filim_item_template">
+
+        <div class=" p-2 m-4 filimcard  col-12 col-sm-4 ms-m-0 col-md-4 col-lg-3">
+            <div class="films">
+                <img class="filim__img " src="http://picsum.photos/300" alt="">
+                <h3 class="filim__titel mb-0"></h3>
+                <h2 class="filim__number">1</h2>
+                <h3 class="filim__year"></h3>
+            </div>
+            <div class="mt-0">
+
+                <button type="button" class="bookmark-btn btn btn-sm btn-danger mt-auto">bookmark</button>
+                <button type="button" class=" more-btn ms-4 me-2 btn btn-sm btn-warning">more</button>
+            </div>
+        </div>
+    </template>
+
+    <template id="modal-overlay">
+        <div class="overlay">
+            <div  class="content">
+                <h2 class="filim-titel">titel</h2>
+                <p class="filim-info"></p>
+
+            </div>
+        </div>
+    </template>
+</body>
+<script src="./js/movies.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
